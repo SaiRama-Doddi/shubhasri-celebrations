@@ -387,8 +387,8 @@ images: [
   }
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#f9e5b3] to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+    <section className="min-h-screen bg-linear-to-b from-[#f9e5b3] to-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-32">
         <button
           onClick={() => navigate('/')}
           className="flex items-center text-[#622e17] hover:text-[#3c0501] mb-8 font-semibold transition cursor-pointer"
@@ -421,7 +421,7 @@ images: [
               <ul className="space-y-3">
                 {service.highlights.map((highlight: string, idx: number) => (
                   <li key={idx} className="flex items-start text-[#622e17]">
-                    <span className="inline-block w-2 h-2 bg-[#ffc900] rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="inline-block w-2 h-2 bg-[#ffc900] rounded-full mr-3 mt-2 shrink-0"></span>
                     <span className="text-lg">{highlight}</span>
                   </li>
                 ))}
@@ -430,12 +430,12 @@ images: [
           </div>
 
           <div className="space-y-6">
-            <div className="bg-gradient-to-br from-[#622e17] to-[#3c0501] rounded-2xl p-8 text-white shadow-xl">
+            <div className="bg-linear-to-br from-[#622e17] to-[#3c0501] rounded-2xl p-8 text-white shadow-xl">
               <h3 className="text-2xl font-bold mb-6 text-[#ffc900]">Service Details</h3>
 
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <DollarSign className="w-6 h-6 text-[#ffc900] mr-4 flex-shrink-0 mt-1" />
+                  <DollarSign className="w-6 h-6 text-[#ffc900] mr-4 shrink-0 mt-1" />
                   <div>
                     <p className="text-sm text-[#b59372]">Starting Price</p>
                     <p className="text-xl font-semibold">{service.pricing}</p>
@@ -443,7 +443,7 @@ images: [
                 </div>
 
                 <div className="flex items-start">
-                  <Clock className="w-6 h-6 text-[#ffc900] mr-4 flex-shrink-0 mt-1" />
+                  <Clock className="w-6 h-6 text-[#ffc900] mr-4 shrink-0 mt-1" />
                   <div>
                     <p className="text-sm text-[#b59372]">Duration</p>
                     <p className="text-lg font-semibold">{service.duration}</p>
@@ -451,7 +451,7 @@ images: [
                 </div>
 
                 <div className="flex items-start">
-                  <Users className="w-6 h-6 text-[#ffc900] mr-4 flex-shrink-0 mt-1" />
+                  <Users className="w-6 h-6 text-[#ffc900] mr-4 shrink-0 mt-1" />
                   <div>
                     <p className="text-sm text-[#b59372]">Our Team Size</p>
                     <p className="text-lg font-semibold">{service.teamSize}</p>
@@ -468,19 +468,19 @@ images: [
               <h4 className="text-lg font-bold mb-4">Why Choose Us?</h4>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 bg-white rounded-full mr-3 mt-1.5 flex-shrink-0"></span>
+                  <span className="inline-block w-2 h-2 bg-white rounded-full mr-3 mt-1.5 shrink-0"></span>
                   <span>Expert team with years of experience</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 bg-white rounded-full mr-3 mt-1.5 flex-shrink-0"></span>
+                  <span className="inline-block w-2 h-2 bg-white rounded-full mr-3 mt-1.5 shrink-0"></span>
                   <span>100% client satisfaction guaranteed</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 bg-white rounded-full mr-3 mt-1.5 flex-shrink-0"></span>
+                  <span className="inline-block w-2 h-2 bg-white rounded-full mr-3 mt-1.5 shrink-0"></span>
                   <span>Customized solutions for every occasion</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 bg-white rounded-full mr-3 mt-1.5 flex-shrink-0"></span>
+                  <span className="inline-block w-2 h-2 bg-white rounded-full mr-3 mt-1.5 shrink-0"></span>
                   <span>Attention to every detail</span>
                 </li>
               </ul>

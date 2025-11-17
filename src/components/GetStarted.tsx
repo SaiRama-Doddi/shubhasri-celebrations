@@ -11,7 +11,7 @@ export default function GetStarted() {
   const handleWhatsApp = () => {
     const phoneNumber = "+918880801244";
     const message = encodeURIComponent(
-      "Hi! I’d like to book a free consultation about interior design services."
+      "Hi! I’d like to book a free consultation about Shubhश्री Celebrations."
     );
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
@@ -62,7 +62,7 @@ export default function GetStarted() {
       {/* Floating Get Started Button */}
       <button
         onClick={() => setIsCalendlyOpen(true)}
-        className="fixed bottom-12 right-8 bg-[#3c0501] text-white px-6 py-3 rounded-lg hover:bg-[#5a48a6] transition-all shadow-lg hover:shadow-xl z-40 cursor-pointer"
+        className="fixed bottom-12 right-8 bg-[#3c0501] text-white px-6 py-3 rounded-lg hover:bg-[#622e17] transition-all shadow-lg hover:shadow-xl z-40 cursor-pointer"
       >
         Book Free Consultation
       </button>

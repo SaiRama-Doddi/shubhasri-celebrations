@@ -126,7 +126,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="py-20 bg-gradient-to-b from-[#f9e5b3] to-white"
+      className="py-20 bg-linear-to-b from-[#f9e5b3] to-white"
     >
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
@@ -157,7 +157,7 @@ const Services = () => {
                       className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
                     />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"></div>
 
                     <div className="absolute bottom-3 left-3">
                       <div

@@ -26,7 +26,7 @@ const Home: FC = () => {
         relative 
         flex items-center justify-center text-center 
         overflow-hidden 
-        h-[50vh] md:h-[100vh] lg:h-[100vh]
+        h-[50vh] md:h-screen lg:h-screen
       "
     >
       {/* Image Carousel */}
@@ -38,14 +38,14 @@ const Home: FC = () => {
             alt={`carousel-${index}`}
             className={`
               absolute inset-0 w-full h-full object-cover 
-              transition-opacity duration-[1500ms] 
+              transition-opacity duration-1500 
               ${current === index ? "opacity-100" : "opacity-0"}
             `}
           />
         ))}
 
         {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#f9e5b3]/50 via-[#b59372]/40 to-[#bc842f]/40" />
+        <div className="absolute inset-0 bg-linear-to-b from-[#f9e5b3]/50 via-[#b59372]/40 to-[#bc842f]/40" />
       </div>
 
       {/* Text Content */}
