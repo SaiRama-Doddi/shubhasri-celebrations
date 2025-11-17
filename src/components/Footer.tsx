@@ -54,13 +54,13 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-[#ffc900]">Follow Us</h4>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/people/Shubha%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-Celebrations/61583829333177/?mibextid=wwXIfr&rdid=tuzzoA2s7sxXMmCi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17ZqNrsi9c%2F%3Fmibextid%3DwwXIfr"
                 className="w-10 h-10 bg-[#622e17] rounded-full flex items-center justify-center hover:bg-[#ffc900] transition-all duration-300"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/shubhashri.celebrations/?igsh=MWM2aW9kOWZmMjNrcQ%3D%3D&utm_source=qr#"
                 className="w-10 h-10 bg-[#622e17] rounded-full flex items-center justify-center hover:bg-[#ffc900] transition-all duration-300"
               >
                 <Instagram className="w-5 h-5" />

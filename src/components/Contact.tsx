@@ -103,8 +103,8 @@ const Contact = () => {
                   <Phone className="w-6 h-6 text-[#ffc900] mt-1 mr-4 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Phone</h4>
-                    <p className="text-[#f9e5b3]">+91 98765 43210</p>
-                    <p className="text-[#f9e5b3]">+91 87654 32109</p>
+                    <p className="text-[#f9e5b3]">+91 88808 01244</p>
+             
                   </div>
                 </div>
 
@@ -113,7 +113,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Email</h4>
                     <p className="text-[#f9e5b3]">info@shubashricelebrations.com</p>
-                    <p className="text-[#f9e5b3]">events@shubashricelebrations.com</p>
+                   
                   </div>
                 </div>
 
@@ -122,9 +122,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Address</h4>
                     <p className="text-[#f9e5b3]">
-                      123 Celebration Street,<br />
-                      Jubilee Hills,<br />
-                      Hyderabad - 500033
+                      Whitefield, Bangalore
                     </p>
                   </div>
                 </div>
@@ -133,14 +131,14 @@ const Contact = () => {
                   <Clock className="w-6 h-6 text-[#ffc900] mt-1 mr-4 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Working Hours</h4>
-                    <p className="text-[#f9e5b3]">Monday - Saturday: 9:00 AM - 8:00 PM</p>
+                    <p className="text-[#f9e5b3]">Monday - Saturday: 9:00 AM - 9:00 PM</p>
                     <p className="text-[#f9e5b3]">Sunday: 10:00 AM - 6:00 PM</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#bc842f] to-[#622e17] rounded-2xl p-10 shadow-xl text-white text-center">
+            <div className="bg-linear-to-br from-[#bc842f] to-[#622e17] rounded-2xl p-10 shadow-xl text-white text-center">
               <h3 className="text-2xl font-bold mb-4">
                 Ready to Start Planning?
               </h3>
@@ -148,7 +146,7 @@ const Contact = () => {
                 Book a free consultation with our event planning experts today!
               </p>
               <a
-                href="tel:+919876543210"
+                href="tel:+918880801244"
                 className="inline-block bg-[#ffc900] text-[#3c0501] px-8 py-3 rounded-full font-semibold hover:bg-white transition-all duration-300 transform hover:scale-105"
               >
                 Call Now
