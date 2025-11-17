@@ -388,7 +388,7 @@ images: [
 
   return (
     <section className="min-h-screen bg-linear-to-b from-[#f9e5b3] to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <button
           onClick={() => navigate('/')}
           className="flex items-center text-[#622e17] hover:text-[#3c0501] mb-8 font-semibold transition cursor-pointer"
