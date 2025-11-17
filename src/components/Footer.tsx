@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-bold text-[#ffc900] mb-4">
-              Shubaश्री Celebrations
+              Shubhaश्री Celebrations
             </h3>
             <p className="text-[#f9e5b3]">
               Creating unforgettable moments and magical celebrations since 2014.
@@ -83,10 +83,10 @@ const Footer = () => {
 
         <div className="border-t border-[#622e17] pt-8 text-center">
           <p className="text-[#f9e5b3] flex items-center justify-center">
-            Made with <Heart className="w-4 h-4 mx-2 text-[#ffc900]" /> by Shubaश्री Celebrations Team
+            Made with <Heart className="w-4 h-4 mx-2 text-[#ffc900]" /> by Shubhaश्री Celebrations Team
           </p>
           <p className="text-[#b59372] mt-2">
-            &copy; 2024 Shubaश्री Celebrations. All rights reserved.
+            &copy; 2024 Shubhaश्री Celebrations. All rights reserved.
           </p>
         </div>
       </div>
