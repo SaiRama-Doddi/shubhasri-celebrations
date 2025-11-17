@@ -5,22 +5,14 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(true);
+  const [isSticky, setIsSticky] = useState(false);
 
-  // Disable sticky on mobile screen sizes
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setIsSticky(false);  // mobile → NOT sticky
-      } else {
-        setIsSticky(true);   // desktop → sticky
-      }
-    };
 
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+
+useEffect(() => {
+  setIsSticky(true); // always sticky on all devices
+}, []);
+
 
   const services = [
     'Wedding',
@@ -39,7 +31,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-[#3c0501] text-white z-50 shadow-lg transition-all duration-300 ${isSticky ? "fixed top-0 left-0 w-full" : "relative"}`}
+      className={`bg-[#3c0501]
+          bg-[url('https://res.cloudinary.com/djhsdo5to/image/upload/v1763398847/3_oputze.jpg')]
+bg-blend-overlay
+         text-white z-50 shadow-lg transition-all duration-300 ${isSticky ? "fixed top-0 left-0 w-full" : "relative"}`}
       
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -100,7 +95,7 @@ const Navbar = () => {
 
         {/* MOBILE MENU DROPDOWN */}
         {isOpen && (
-          <div className="md:hidden sticky pb-4 space-y-3">
+          <div className="md:hidden  pb-4 space-y-3">
             <a
               href="#home"
               className="block py-2 hover:text-[#ffc900]"
