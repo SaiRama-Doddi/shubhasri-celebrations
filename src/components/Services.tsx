@@ -121,6 +121,7 @@ const Services = () => {
       image:
         "https://res.cloudinary.com/djhsdo5to/image/upload/v1763379770/c4_oshyiw.webp",
     },
+    
   ];
 
   return (

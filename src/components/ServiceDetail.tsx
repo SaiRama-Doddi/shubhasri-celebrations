@@ -365,7 +365,231 @@ images: [
   "https://res.cloudinary.com/djhsdo5to/image/upload/v1763379764/c9_mmahiz.jpg"
 ]
 
-    }
+    },
+    'decor-stage-design': {
+  title: 'Decor & Stage Design',
+  description: 'Floral mandaps, theme sets, stage backdrops, and premium décor setups.',
+  fullDescription:
+    'We create visually stunning décor setups crafted with precision and creativity. From intimate ceremonies to grand celebrations, our décor team delivers theme-based designs, floral structures, mandaps, stage backdrops, pathways, and lighting aesthetics that transform your event space into a breathtaking experience.',
+  highlights: [
+    'Custom theme décor',
+    'Floral mandaps & stage arrangements',
+    'Photo booth setups',
+    'Lighting design & ambience creation',
+    'Entrance and pathway décor',
+    'Premium high-end luxury décor options',
+    'Complete stage planning and execution'
+  ],
+  pricing: 'Starting from ₹80,000',
+  duration: '6–12 hours setup time',
+  teamSize: '10–18 professionals',
+  rating: 4.9,
+  reviews: 182,
+  images: [
+    'https://res.cloudinary.com/demo/image/upload/decor1.jpg',
+    'https://res.cloudinary.com/demo/image/upload/decor2.jpg',
+    'https://res.cloudinary.com/demo/image/upload/decor3.jpg'
+  ]
+}
+,
+'catering-services': {
+  title: 'Catering Services',
+  description: 'Traditional catering, sweet counters, mocktail bars, and complete food management.',
+  fullDescription:
+    'Our catering team brings authentic flavours, diverse menu options, and impeccable hospitality. From traditional meals to modern fusion counters, we ensure high-quality food prepared with hygiene, freshness, and signature taste. Ideal for weddings, ceremonies, corporate events, and home functions.',
+  highlights: [
+    'Traditional vegetarian & non-vegetarian menus',
+    'Live counters & sweet stalls',
+    'Mocktail & juice bars',
+    'Buffet arrangement & serving team',
+    'Premium plating & presentation',
+    'Customized event-specific menus'
+  ],
+  pricing: 'Starting from ₹350 per plate',
+  duration: 'Based on menu and guest count',
+  teamSize: '12–25 professionals',
+  rating: 4.8,
+  reviews: 210,
+  images: [
+    'https://res.cloudinary.com/demo/image/upload/catering1.jpg',
+    'https://res.cloudinary.com/demo/image/upload/catering2.jpg',
+    'https://res.cloudinary.com/demo/image/upload/catering3.jpg'
+  ]
+}
+,
+'design-invitations': {
+  title: 'Design & Invitations',
+  description: 'Invitations, digital reels, teaser videos, and premium event creatives.',
+  fullDescription:
+    'ShubaShree Creators bring artistic design and storytelling to your celebrations. From invitation cards to digital save-the-dates, teaser videos, reels, and branded event graphics, we craft visually compelling designs that match your event theme and personality.',
+  highlights: [
+    'Printed & digital invitation cards',
+    'Save-the-date videos',
+    'Event teaser films & reels',
+    'Theme-based design templates',
+    'Custom logo & monogram creation',
+    'Animated invitations & e-cards'
+  ],
+  pricing: 'Starting from ₹7,000',
+  duration: '2–5 days',
+  teamSize: '3–6 designers',
+  rating: 4.7,
+  reviews: 94,
+  images: [
+    'https://res.cloudinary.com/demo/image/upload/invite1.jpg',
+    'https://res.cloudinary.com/demo/image/upload/invite2.jpg',
+    'https://res.cloudinary.com/demo/image/upload/invite3.jpg'
+  ]
+}
+,
+'photography-videography': {
+  title: 'Photography & Videography',
+  description: 'Wedding albums, live streaming, cinematic videography, and reels.',
+  fullDescription:
+    'ShubaShree Moments captures emotions, memories, and beautiful details through artistic photography and cinematic filmmaking. We specialize in live event coverage, cinematic highlights, creative reels, and premium album design.',
+  highlights: [
+    'Candid photography',
+    'Cinematic videography',
+    'Drone and aerial shots',
+    'Live streaming setup',
+    'Premium wedding album design',
+    'Event highlight reels'
+  ],
+  pricing: 'Starting from ₹55,000',
+  duration: 'Event-based coverage',
+  teamSize: '4–10 professionals',
+  rating: 4.9,
+  reviews: 165,
+  images: [
+    'https://res.cloudinary.com/demo/image/upload/photo1.jpg',
+    'https://res.cloudinary.com/demo/image/upload/photo2.jpg',
+    'https://res.cloudinary.com/demo/image/upload/photo3.jpg'
+  ]
+}
+,'hampers-return-gifts': {
+  title: 'Hampers & Return Gifts',
+  description: 'Event hampers, eco-friendly gifts, and customized gifting solutions.',
+  fullDescription:
+    'We offer beautifully curated hampers and return gifts for weddings, baby showers, housewarmings, and corporate events. Each hamper is personalized, premium, and made to match the theme of your celebration.',
+  highlights: [
+    'Customizable hampers',
+    'Eco-friendly gift sets',
+    'Sweets, dry fruits & wellness hampers',
+    'Theme-based packaging',
+    'Bulk gifting for events',
+    'Premium luxury gift options'
+  ],
+  pricing: 'Starting from ₹350 per gift',
+  duration: '2–7 days',
+  teamSize: '3–8 professionals',
+  rating: 4.6,
+  reviews: 74,
+  images: [
+    'https://res.cloudinary.com/demo/image/upload/hamp1.jpg',
+    'https://res.cloudinary.com/demo/image/upload/hamp2.jpg',
+    'https://res.cloudinary.com/demo/image/upload/hamp3.jpg'
+  ]
+},
+'digital-services': {
+  title: 'Digital Services',
+  description: 'E-invites, event websites, RSVP forms, and complete digital event solutions.',
+  fullDescription:
+    'Our digital team builds seamless and modern solutions—interactive event websites, RSVP systems, animated invitations, and digital experiences that elevate your event convenience and appeal.',
+  highlights: [
+    'Animated e-invites',
+    'Personal event websites',
+    'RSVP tracking & guest management',
+    'WhatsApp invite packages',
+    'Microsite creation',
+    'QR code-based check-in'
+  ],
+  pricing: 'Starting from ₹9,000',
+  duration: '1–3 days',
+  teamSize: '2–5 members',
+  rating: 4.8,
+  reviews: 102,
+  images: [
+    'https://res.cloudinary.com/demo/image/upload/digital1.jpg',
+    'https://res.cloudinary.com/demo/image/upload/digital2.jpg',
+    'https://res.cloudinary.com/demo/image/upload/digital3.jpg'
+  ]
+},
+'music-entertainment': {
+  title: 'Music & Entertainment',
+  description:
+    'Nadhaswaram, folk performances, DJs, MCs, and entertainment artists for every celebration.',
+  fullDescription:
+    'ShubaShree Vibes delivers exceptional live music and performance experiences. From traditional ensembles to modern entertainment acts, we curate the perfect ambience for your celebrations.',
+  highlights: [
+    'Nadhaswaram & dhol teams',
+    'Folk & cultural performances',
+    'MCs and hosts',
+    'DJ and sound systems',
+    'Live instrumental artists',
+    'Custom stage entertainment'
+  ],
+  pricing: 'Starting from ₹15,000',
+  duration: '1–5 hours',
+  teamSize: '2–10 performers',
+  rating: 4.7,
+  reviews: 119,
+  images: [
+    'https://res.cloudinary.com/demo/image/upload/music1.jpg',
+    'https://res.cloudinary.com/demo/image/upload/music2.jpg',
+    'https://res.cloudinary.com/demo/image/upload/music3.jpg'
+  ]
+},
+'religious-rituals': {
+  title: 'Religious & Cultural Arrangements',
+  description: 'Priests, puja samagri, homam arrangements, and temple collaborations.',
+  fullDescription:
+    'We manage complete religious setups for traditional events—from sourcing the right priests to arranging puja samagri, homam materials, and culturally authentic décor for rituals.',
+  highlights: [
+    'Certified priests (Tamil, Telugu, Kannada, North-Indian)',
+    'Complete puja samagri',
+    'Homam & havan arrangements',
+    'Traditional décor setups',
+    'Temple coordination on request'
+  ],
+  pricing: 'Starting from ₹12,000',
+  duration: '1–4 hours',
+  teamSize: '2–6 members',
+  rating: 4.9,
+  reviews: 86,
+  images: [
+    'https://res.cloudinary.com/demo/image/upload/ritual1.jpg',
+    'https://res.cloudinary.com/demo/image/upload/ritual2.jpg',
+    'https://res.cloudinary.com/demo/image/upload/ritual3.jpg'
+  ]
+},
+'luxury-events': {
+  title: 'Luxury Events',
+  description: 'Destination weddings, premium décor, and exclusive high-end experiences.',
+  fullDescription:
+    'ShubaShree Luxury offers world-class experiences featuring grand décor, exclusive hospitality, destination setups, and premium event planning for clients seeking elite celebrations.',
+  highlights: [
+    'Luxury décor concepts',
+    'Destination wedding planning',
+    'Premium hospitality & concierge',
+    'Exclusive artist bookings',
+    'High-budget execution team',
+    'Complete personalized planning'
+  ],
+  pricing: 'Starting from ₹3,50,000',
+  duration: 'Full-scale project',
+  teamSize: '20–40 professionals',
+  rating: 5.0,
+  reviews: 51,
+  images: [
+    'https://res.cloudinary.com/demo/image/upload/lux1.jpg',
+    'https://res.cloudinary.com/demo/image/upload/lux2.jpg',
+    'https://res.cloudinary.com/demo/image/upload/lux3.jpg'
+  ]
+}
+
+
+
+
   };
 
   const service = servicesData[serviceId || ''];
