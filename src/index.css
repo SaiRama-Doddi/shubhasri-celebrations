@@ -6,3 +6,10 @@
 html {
   scroll-padding-top: 80px; /* or match your header height */
 }
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+* {
+  max-width: 100% !important;
+}

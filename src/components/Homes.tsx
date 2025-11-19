@@ -26,13 +26,13 @@ export default function Homes() {
   ];
 
   return (
-    <div id="home" className="min-h-screen bg-[#4a1515] relative overflow-hidden">
+    <div id="home" className="min-h-screen bg-[#4a1515] relative overflow-x-hidden">
       <div className="absolute inset-0 bg-[url('/shubha.png')] bg-cover bg-center opacity-10"></div>
 
       <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-black/20 to-transparent"></div>
 
-      <div className="absolute top-0 left-0 right-0">
-        <svg className="w-full h-8" viewBox="0 0 1200 40" preserveAspectRatio="none">
+      <div className="absolute top-0 left-0 right-0  overflow-hidden">
+        <svg className="w-full h-8 max-w-full" viewBox="0 0 1200 40" preserveAspectRatio="none">
           <path d="M0,20 Q30,5 60,20 T120,20 T180,20 T240,20 T300,20 T360,20 T420,20 T480,20 T540,20 T600,20 T660,20 T720,20 T780,20 T840,20 T900,20 T960,20 T1020,20 T1080,20 T1140,20 T1200,20 L1200,0 L0,0 Z"
                 fill="#d4af37" opacity="0.3"/>
           <circle cx="60" cy="20" r="3" fill="#d4af37"/>
@@ -112,8 +112,8 @@ export default function Homes() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg className="w-full h-8" viewBox="0 0 1200 40" preserveAspectRatio="none">
+      <div className="absolute bottom-0 left-0 right-0 overflow-hidden">
+        <svg className="w-full h-8 max-w-full   " viewBox="0 0 1200 40" preserveAspectRatio="none">
           <path d="M0,20 Q30,35 60,20 T120,20 T180,20 T240,20 T300,20 T360,20 T420,20 T480,20 T540,20 T600,20 T660,20 T720,20 T780,20 T840,20 T900,20 T960,20 T1020,20 T1080,20 T1140,20 T1200,20 L1200,40 L0,40 Z"
                 fill="#d4af37" opacity="0.3"/>
           <circle cx="60" cy="20" r="3" fill="#d4af37"/>
