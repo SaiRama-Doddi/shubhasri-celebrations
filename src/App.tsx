@@ -15,6 +15,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import { PopupModal } from "react-calendly";
 import Gallery from "./components/Gallery";
 
+import GetStarted from "./components/GetStarted";
+
 function AppWrapper() {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
 
@@ -113,6 +115,8 @@ function AppWrapper() {
         onModalClose={closeCalendly}
         rootElement={document.getElementById("root") as HTMLElement}
       />
+
+      <GetStarted/>
     </>
   );
 }

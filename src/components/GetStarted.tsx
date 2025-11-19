@@ -62,9 +62,9 @@ export default function GetStarted() {
       {/* Floating Get Started Button */}
       <button
         onClick={() => setIsCalendlyOpen(true)}
-        className="fixed bottom-12 right-8 bg-[#3c0501] text-white px-6 py-3 rounded-lg hover:bg-[#622e17] transition-all shadow-lg hover:shadow-xl z-40 cursor-pointer"
+        className="fixed bottom-12 right-8 bg-[#ffd700] text-[#3c0501] px-6 py-3 rounded-lg hover:bg-yellow-400 transition-all shadow-lg hover:shadow-xl z-40 cursor-pointer font-bold"
       >
-        Book Free Consultation
+        Book Now
       </button>
 
       {/* WhatsApp Button */}
@@ -80,7 +80,7 @@ export default function GetStarted() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-12 left-8 bg-[#3c0501] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-900 hover:scale-110 transition-transform duration-300 z-40 cursor-pointer"
+          className="fixed bottom-12 left-8 bg-[#ffd700] text-[#3c0501] w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-900 hover:scale-110 transition-transform duration-300 z-40 cursor-pointer"
           aria-label="Scroll to top"
         >
           <FaArrowUp className="w-7 h-7" />
