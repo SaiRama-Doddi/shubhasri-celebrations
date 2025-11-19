@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="py-24 relative bg-gradient-to-b from-[#f5d9a9] via-[#f3e8d9] to-white"
+      className="py-24 relative bg-linear-to-b from-[#f5d9a9] via-[#f3e8d9] to-white"
     >
       {/* Soft Pattern Background */}
       <div className="absolute inset-0 opacity-[0.15] bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
@@ -27,7 +27,7 @@ const Services = () => {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-          {mainServices.map((service, index) => {
+          {mainServices.slice(0, 6).map((service, index) => {
             const IconComponent = service.icon;
             const serviceUrl = `/service/${service.title.toLowerCase().replace(/\s+/g, '-')}`;
 
