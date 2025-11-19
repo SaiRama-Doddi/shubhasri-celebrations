@@ -55,7 +55,7 @@ export default function Homes() {
           {/* HERO TEXT */}
           <div className="text-center mb-16 animate-fade-in">
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#d4af37] mb-4 tracking-wide">
+            <h1 className="font-dancing text-4xl sm:text-5xl md:text-6xl font-bold text-[#d4af37] mb-4 tracking-wide">
               Make Your Moments Truly Special
             </h1>
 

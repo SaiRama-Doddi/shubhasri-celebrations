@@ -39,7 +39,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
               className="h-16 w-16 object-contain drop-shadow-lg"
             />
             <div className="flex flex-col">
-              <span className="text-[#ffd700] font-extrabold text-2xl tracking-wide">
+              <span className="text-[#ffd700] font-bold text-2xl tracking-wide">
                 Shubhaश्री
               </span>
               <span className="text-[#ffd700]/80 text-xs tracking-widest">
