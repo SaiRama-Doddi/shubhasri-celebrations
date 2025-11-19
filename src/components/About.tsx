@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-24 relative bg-gradient-to-b from-white to-[#f9e5b3] text-[#3c0501]"
+      className="py-24 relative bg-linear-to-b from-white to-[#f9e5b3] text-[#3c0501]"
     >
       {/* Soft Luxury Pattern */}
       <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')]"></div>
@@ -141,7 +141,7 @@ const About = () => {
 
 
         {/* Brands Worked With */}
-        <div className="bg-[#3c0501] rounded-2xl p-10 shadow-xl">
+       {/*  <div className="bg-[#3c0501] rounded-2xl p-10 shadow-xl">
           <h3 className="text-3xl font-bold mb-10 text-center text-white">
             Brands That Trusted Us
           </h3>
@@ -156,7 +156,85 @@ const About = () => {
               </div>
             ))}
           </div>
+        </div> */}
+
+         <section className="py-20 ">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <h2 className="text-4xl md:text-5xl font-bold text-amber-900">Why Choose Us?</h2>
+
+              {[
+                {
+                  title: 'Expert Team',
+                  desc: 'Experienced professionals dedicated to perfection in every detail'
+                },
+                {
+                  title: 'Customized Solutions',
+                  desc: 'We tailor every event to match your unique vision and requirements'
+                },
+                {
+                  title: 'Premium Quality',
+                  desc: 'Only the finest vendors and decorations for your special day'
+                },
+                {
+                  title: 'On-Time Delivery',
+                  desc: 'Punctuality and reliability you can always count on'
+                },
+                {
+                  title: 'Budget Friendly',
+                  desc: 'Exceptional value without compromising on quality'
+                },
+                {
+                  title: '24/7 Support',
+                  desc: 'Always there when you need us, before, during, and after your event'
+                }
+              ].map((item, idx) => (
+                <div key={idx} className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-10 w-10 rounded-full bg-amber-400 text-amber-900">
+                      <span className="font-bold">{idx + 1}</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-amber-900">{item.title}</h3>
+                    <p className="text-amber-700">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-rose-400 rounded-3xl blur-2xl opacity-20"></div>
+              <div className="relative bg-gradient-to-br from-amber-100 to-rose-100 p-12 rounded-3xl border-2 border-amber-200">
+                <div className="space-y-6">
+                  <div className="text-center">
+                    <p className="text-5xl font-bold text-amber-900">12+</p>
+                    <p className="text-amber-700 font-semibold">Years of Experience</p>
+                  </div>
+                  <div className="h-1 bg-gradient-to-r from-amber-400 to-rose-400 rounded-full"></div>
+                  <p className="text-amber-800 text-center leading-relaxed">
+                    Trusted by hundreds of families to create their most cherished moments with excellence and tradition.
+                  </p>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-white p-4 rounded-xl text-center border border-amber-200">
+                      <p className="text-2xl font-bold text-amber-900">500+</p>
+                      <p className="text-xs text-amber-700">Happy Clients</p>
+                    </div>
+                    <div className="bg-white p-4 rounded-xl text-center border border-amber-200">
+                      <p className="text-2xl font-bold text-amber-900">100%</p>
+                      <p className="text-xs text-amber-700">Satisfaction</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+
+    
+
       </div>
     </section>
   );

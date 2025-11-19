@@ -1,6 +1,7 @@
+import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import Navbar from "./components/Navbars";
+import Home from "./components/Homes";
 import Services from "./components/Services";
 import AllServices from "./components/AllServices";
 import About from "./components/About";
@@ -9,48 +10,60 @@ import Footer from "./components/Footer";
 import ServiceDetail from "./components/ServiceDetail";
 import Highlights from "./components/Highlights";
 import Parallax from "./components/Parallax";
-import GetStarted from "./components/GetStarted";
-import ScrollToTop from "./components/ScrollToTop";
 import Testimonials from "./components/Testinomials";
+import ScrollToTop from "./components/ScrollToTop";
+import { PopupModal } from "react-calendly";
+import Gallery from "./components/Gallery";
 
-function HomePage() {
-  return (
-    <>
-      <Navbar />
-      <Home />
-
-      <Services />
-      <Parallax image="https://res.cloudinary.com/djhsdo5to/image/upload/v1763395383/home_t0cidf.png" height="600px" />
-      <About />
-      <Parallax image="https://res.cloudinary.com/djhsdo5to/image/upload/v1763395618/pexels-nguy-n-ti-n-th-nh-2150376175-33104577_vfibmq.jpg" height="600px" />
-      <Highlights />
-      <Parallax image="https://res.cloudinary.com/djhsdo5to/image/upload/v1763395614/pexels-thevisionaryvows-33485972_dlu2tw.jpg" height="600px" />
-      <Testimonials/>
-
-      <Contact />
-      <Footer />
-      <GetStarted />
-    </>
-  );
-}
-
-// Wrapper to apply ScrollToTop on route change
 function AppWrapper() {
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
 
+  const openCalendly = () => setIsCalendlyOpen(true);
+  const closeCalendly = () => setIsCalendlyOpen(false);
+
+  const calendlyUrl = "https://calendly.com/shubhashricelebrations1/30min";
 
   return (
     <>
-      {/* Scroll to top whenever the route changes */}
-      <ScrollToTop  />
+      <ScrollToTop />
+
+      {/* Pass openCalendly to Navbar */}
+      <Navbar onBookClick={openCalendly} />
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <Services />
+              <Parallax
+                image="https://res.cloudinary.com/djhsdo5to/image/upload/v1763395383/home_t0cidf.png"
+                height="600px"
+              />
+              <About />
+              <Parallax
+                image="https://res.cloudinary.com/djhsdo5to/image/upload/v1763395618/pexels-nguy-n-ti-n-th-nh-2150376175-33104577_vfibmq.jpg"
+                height="600px"
+              />
+              <Highlights />
+              <Parallax
+                image="https://res.cloudinary.com/djhsdo5to/image/upload/v1763395614/pexels-thevisionaryvows-33485972_dlu2tw.jpg"
+                height="600px"
+              />
+             
+              <Gallery/>
+               <Testimonials />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
 
         <Route
           path="/services"
           element={
             <>
-              <Navbar />
               <AllServices />
               <Footer />
             </>
@@ -61,18 +74,19 @@ function AppWrapper() {
           path="/service/:serviceId"
           element={
             <>
-              <Navbar />
               <ServiceDetail />
               <Footer />
             </>
           }
         />
-
+  
+     <Route path="/gallery" element={
+      <Gallery/>
+     }/>
         <Route
           path="/about"
           element={
             <>
-              <Navbar />
               <About />
               <Footer />
             </>
@@ -83,13 +97,22 @@ function AppWrapper() {
           path="/contact"
           element={
             <>
-              <Navbar />
               <Contact />
               <Footer />
             </>
           }
         />
+
+        {/* Remove /book route now */}
       </Routes>
+
+      {/* Calendly Popup Modal */}
+      <PopupModal
+        url={calendlyUrl}
+        open={isCalendlyOpen}
+        onModalClose={closeCalendly}
+        rootElement={document.getElementById("root") as HTMLElement}
+      />
     </>
   );
 }
