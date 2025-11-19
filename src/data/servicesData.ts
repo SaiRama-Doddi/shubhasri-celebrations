@@ -461,7 +461,7 @@ export const specializedServices: Service[] = [
     teamSize: '12-25 professionals',
     rating: 4.8,
     reviews: 210,
-    image: 'https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1170',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532004/f8_vwfs2l.jpg',
     highlights: [
       'Traditional vegetarian & non-vegetarian menus',
       'Live counters & sweet stalls',
@@ -471,14 +471,14 @@ export const specializedServices: Service[] = [
       'Customized event-specific menus'
     ],
     images: [
-      'https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1170',
-      'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1170',
-      'https://images.unsplash.com/photo-1530062845289-9109b2c9c868?q=80&w=1169',
-      'https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?q=80&w=1170',
-      'https://images.unsplash.com/photo-1505253758473-96b7015fcd40?q=80&w=1170',
-      'https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1074',
-      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1170',
-      'https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1074'
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532004/f7_mwber4.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532003/f2_miitqk.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532004/f10_c4bvif.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532003/f6_la077t.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532003/f3_dzygrd.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532004/f9_gws9hw.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532003/f2_miitqk.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532003/f4_qzb0yz.jpg'
     ]
   },
   {
@@ -502,12 +502,12 @@ export const specializedServices: Service[] = [
       'Animated invitations & e-cards'
     ],
     images: [
-      'https://images.unsplash.com/photo-1530103043960-ef38714abb15?q=80&w=1170',
-      'https://images.unsplash.com/photo-1481437642641-2f0ae875f836?q=80&w=1170',
-      'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=1169',
-      'https://images.unsplash.com/photo-1606416406216-2b2abea5f909?q=80&w=1074',
-      'https://images.unsplash.com/photo-1486520299386-6d106b22014b?q=80&w=1169',
-      'https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1170',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532797/d2_yoi0fi.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532798/d4_qyz4sf.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532797/d3_ved3jy.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532797/d1_ktrfod.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532798/d5_kpyfkg.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532798/d6_ok3ats.jpg',
       'https://images.unsplash.com/photo-1542744173-05336fcc7ad4?q=80&w=1074',
       'https://images.unsplash.com/photo-1516384903227-139a8cf0ec21?q=80&w=1176'
     ]
@@ -533,13 +533,13 @@ export const specializedServices: Service[] = [
       'Event highlight reels'
     ],
     images: [
-      'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1171',
-      'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1169',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763449203/m8_ryjxpi.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763449202/m6_xyom2r.jpg',
       'https://images.unsplash.com/photo-1452827073306-6e6e661baf57?q=80&w=1074',
       'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1170',
       'https://images.unsplash.com/photo-1554048612-b6a482bc67e5?q=80&w=1170',
       'https://images.unsplash.com/photo-1502982899975-c0b10c44b2ae?q=80&w=1170',
-      'https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?q=80&w=1032',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763449203/m9_yzbjkq.jpg',
       'https://images.unsplash.com/photo-1486401899868-0e435ed85128?q=80&w=1170'
     ]
   },
