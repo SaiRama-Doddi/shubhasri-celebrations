@@ -26,75 +26,72 @@ export default function Homes() {
   ];
 
   return (
-    <div id="home" className="min-h-screen bg-[#4a1515] relative overflow-x-hidden">
+    <div
+      id="home"
+      className="min-h-screen bg-[#4a1515] relative overflow-x-hidden"
+    >
+      {/* Background texture */}
       <div className="absolute inset-0 bg-[url('/shubha.png')] bg-cover bg-center opacity-10"></div>
 
-      <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-black/20 to-transparent"></div>
-
-      <div className="absolute top-0 left-0 right-0  overflow-hidden">
-        <svg className="w-full h-8 max-w-full" viewBox="0 0 1200 40" preserveAspectRatio="none">
-          <path d="M0,20 Q30,5 60,20 T120,20 T180,20 T240,20 T300,20 T360,20 T420,20 T480,20 T540,20 T600,20 T660,20 T720,20 T780,20 T840,20 T900,20 T960,20 T1020,20 T1080,20 T1140,20 T1200,20 L1200,0 L0,0 Z"
-                fill="#d4af37" opacity="0.3"/>
-          <circle cx="60" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="180" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="300" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="420" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="540" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="660" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="780" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="900" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="1020" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="1140" cy="20" r="3" fill="#d4af37"/>
+      {/* ===== TOP SVG BEHIND TEXT ===== */}
+      <div className="absolute top-0 left-0 right-0 overflow-hidden z-0">
+        <svg
+          className="w-full h-10 opacity-50"
+          viewBox="0 0 1200 40"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,20 Q30,5 60,20 T120,20 T180,20 T240,20 T300,20 T360,20 T420,20 T480,20 T540,20 T600,20 T660,20 T720,20 T780,20 T840,20 T900,20 T960,20 T1020,20 T1080,20 T1140,20 T1200,20 L1200,0 L0,0 Z"
+            fill="#d4af37"
+            opacity="0.25"
+          />
         </svg>
       </div>
 
-      <div className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      {/* CONTENT */}
+      <div className="relative z-10 pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
+          
+          {/* HERO TEXT */}
           <div className="text-center mb-16 animate-fade-in">
-            <div className="flex justify-center mb-8">
-              <div className="relative group">
-                <div className="absolute -inset-4 bg-[#d4af37]/20 rounded-full blur-xl group-hover:bg-[#d4af37]/30 transition-all duration-500"></div>
-               {/*  <img
-                  src="/shubha.png"
-                  alt="Shubha Celebrations"
-                  className="relative h-48 w-48 object-contain drop-shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
-                /> */}
-              </div>
-            </div>
 
-            <h1 className="text-5xl md:text-6xl font-bold text-[#d4af37] mb-4 tracking-wide">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#d4af37] mb-4 tracking-wide">
               Make Your Moments Truly Special
             </h1>
 
-            <div className="flex items-center justify-center space-x-4 text-xl md:text-2xl text-[#d4af37]/90 font-light mb-8">
-              <span>Your Celebration,Our Passion</span>
-              
+            <div className="mt-2 text-lg sm:text-xl text-[#d4af37]/90 font-light">
+              Your Celebration, Our Passion
             </div>
 
-            <p className="text-lg md:text-xl text-[#d4af37]/70 max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-[#d4af37]/70 max-w-3xl mx-auto mb-10 leading-relaxed mt-4">
               Creating unforgettable moments with traditional values and modern elegance.
               Every celebration is a masterpiece, every detail tells a story.
             </p>
 
+            {/* BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-             <Link to="/services">
-  <button className="px-8 py-4 bg-[#d4af37] text-[#4a1515] font-bold rounded-lg hover:bg-[#f0c14b] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#d4af37]/50">
-    Plan Your Event
-  </button>
-</Link>
+              <Link to="/services">
+                <button className="px-8 py-4 bg-[#d4af37] text-[#4a1515] font-bold rounded-lg hover:bg-[#f0c14b] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#d4af37]/50">
+                  Plan Your Event
+                </button>
+              </Link>
+
               <button className="px-8 py-4 border-2 border-[#d4af37] text-[#d4af37] font-bold rounded-lg hover:bg-[#d4af37]/10 transform hover:scale-105 transition-all duration-300">
                 View Gallery
               </button>
             </div>
           </div>
 
+          {/* FEATURE CARDS */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
                 <div
                   key={index}
-                  className="bg-[#5a2020]/50 backdrop-blur-sm border-2 border-[#d4af37]/30 rounded-xl p-6 hover:border-[#d4af37] hover:bg-[#5a2020]/70 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-[#d4af37]/20 group"
+                  className="bg-[#5a2020]/50 backdrop-blur-sm border-2 border-[#d4af37]/30 rounded-xl p-6 
+                  hover:border-[#d4af37] hover:bg-[#5a2020]/70 transition-all duration-300 
+                  transform hover:-translate-y-2 hover:shadow-xl hover:shadow-[#d4af37]/20 group"
                 >
                   <div className="bg-[#d4af37]/20 w-14 h-14 rounded-full flex items-center justify-center mb-4 group-hover:bg-[#d4af37]/30 transition-all duration-300 group-hover:scale-110">
                     <Icon className="text-[#d4af37]" size={28} />
@@ -112,24 +109,16 @@ export default function Homes() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 overflow-hidden">
-        <svg className="w-full h-8 max-w-full   " viewBox="0 0 1200 40" preserveAspectRatio="none">
-          <path d="M0,20 Q30,35 60,20 T120,20 T180,20 T240,20 T300,20 T360,20 T420,20 T480,20 T540,20 T600,20 T660,20 T720,20 T780,20 T840,20 T900,20 T960,20 T1020,20 T1080,20 T1140,20 T1200,20 L1200,40 L0,40 Z"
-                fill="#d4af37" opacity="0.3"/>
-          <circle cx="60" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="180" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="300" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="420" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="540" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="660" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="780" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="900" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="1020" cy="20" r="3" fill="#d4af37"/>
-          <circle cx="1140" cy="20" r="3" fill="#d4af37"/>
+      {/* ===== BOTTOM SVG ===== */}
+      <div className="absolute bottom-0 left-0 right-0 overflow-hidden z-0">
+        <svg className="w-full h-10" viewBox="0 0 1200 40" preserveAspectRatio="none">
+          <path
+            d="M0,20 Q30,35 60,20 T120,20 T180,20 T240,20 T300,20 T360,20 T420,20 T480,20 T540,20 T600,20 T660,20 T720,20 T780,20 T840,20 T900,20 T960,20 T1020,20 T1080,20 T1140,20 T1200,20 L1200,40 L0,40 Z"
+            fill="#d4af37"
+            opacity="0.25"
+          />
         </svg>
       </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-black/20 to-transparent"></div>
     </div>
   );
 }
