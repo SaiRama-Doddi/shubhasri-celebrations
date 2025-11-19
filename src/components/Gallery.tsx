@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const Gallery = () => {
   // ------- JUST IMAGES (ADD ALL YOUR PREWEDDING / PHOTOSHOOT / HALDI / WEDDING IMAGES HERE) -------
