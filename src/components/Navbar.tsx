@@ -45,9 +45,9 @@ bg-blend-overlay
           {/* LOGO CLEANER & CLEARER */}
           <Link to="/" className="flex items-center">
             <img
-              src="/shubha1.png"
+              src="/shubha.png"
               alt="SS Consultants Logo"
-              className="w-44 md:w-65 h-auto object-contain drop-shadow-lg"
+              className="w-44 md:w-60 h-auto object-contain drop-shadow-lg"
             />
           </Link>
 
