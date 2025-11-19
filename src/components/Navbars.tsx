@@ -67,7 +67,8 @@ export default function Navbar({ onBookClick }: NavbarProps) {
                 Services <ChevronDown className="ml-1 w-4 h-4" />
               </button>
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-3 w-64 bg-[#4a1515] border border-[#d4af37]/40 rounded-xl shadow-2xl py-3 backdrop-blur-xl">
+<div className="absolute top-full left-0 mt-1 min-w-72 bg-[#4a1515] border border-[#d4af37]/40 rounded-xl shadow-2xl py-3 backdrop-blur-xl">
+
                   {services.map((service, index) => (
                     <Link
                       key={index}

@@ -13,7 +13,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 relative">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-[#3c0501] drop-shadow-sm">
+          <h2 className="font-pacifico text-5xl font-bold text-[#3c0501] drop-shadow-sm">
             Our Services
           </h2>
 

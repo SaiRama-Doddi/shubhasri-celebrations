@@ -76,9 +76,11 @@ export default function Homes() {
                 </button>
               </Link>
 
+                 <Link to="/gallery">
               <button className="px-8 py-4 border-2 border-[#d4af37] text-[#d4af37] font-bold rounded-lg hover:bg-[#d4af37]/10 transform hover:scale-105 transition-all duration-300">
                 View Gallery
               </button>
+              </Link>
             </div>
           </div>
 

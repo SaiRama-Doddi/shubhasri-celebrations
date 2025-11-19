@@ -17,7 +17,7 @@ const Gallery = () => {
   return (
     <section id="gallery" className="py-20 bg-[#fff8f3]">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-5xl md:text-6xl font-bold text-[#3c0501] mb-12">
+        <h2 className="font-pacifico text-5xl md:text-5xl font-bold text-[#3c0501] mb-12">
           Our <span className="text-[#d4af37]">Portfolio</span>
         </h2>
 

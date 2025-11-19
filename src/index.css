@@ -1,25 +1,33 @@
 @import "tailwindcss";
+/* Put Google fonts inside base layer */
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+  .font-pacifico {
+    font-family: "Pacifico", cursive;
+  }
 
-.font-dancing {
-  font-family: "Dancing Script", cursive;
+  .font-dancing {
+    font-family: "Dancing Script", cursive;
+  }
 }
-
-
-
+/* GLOBAL FIXES */
 html {
-  scroll-padding-top: 80px; /* or match your header height */
+  scroll-padding-top: 80px;
 }
-html, body {
+
+html,
+body {
   overflow-x: hidden !important;
   width: 100%;
 }
+
 * {
   max-width: 100% !important;
 }
 
-
+/* FLOAT ANIMATION */
 @keyframes fadeFloat {
   0% {
     opacity: 0;
@@ -38,8 +46,7 @@ html, body {
   animation: fadeFloat 1.8s ease-out forwards;
 }
 
-
-/* ANIMATED BACKGROUND */
+/* BACKGROUND ANIMATION */
 @keyframes bgMove {
   0% {
     background-position: center top;

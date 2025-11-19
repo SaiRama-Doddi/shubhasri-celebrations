@@ -13,11 +13,11 @@ const About = () => {
         
         {/* Title */}
         <div className="text-center mb-20">
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 text-[text-[#3c0501]] drop-shadow-xl">
+          <h2 className="font-pacifico text-3xl sm:text-5xl md:text-5xl font-bold mb-4 text-[text-[#3c0501]] drop-shadow-xl">
             About Shubaश्री Celebrations
           </h2>
 
-          <div className="w-32 h-1 bg-gradient-to-r bg-[#3c0501] mx-auto rounded-full mb-6"></div>
+          <div className="w-42 h-1 bg-gradient-to-r bg-[#3c0501] mx-auto rounded-full mb-6"></div>
 
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Crafting magical moments with elegance, creativity, and perfection.
