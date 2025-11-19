@@ -55,6 +55,15 @@ export default function Homes() {
           {/* HERO TEXT */}
           <div className="text-center mb-16 animate-fade-in">
 
+
+            {/* LOGO (animated) */}
+  <div className="flex justify-center mb-6">
+    <img
+      src="/shubha.png"
+      alt="Event Logo"
+      className="w-28 sm:w-36 md:w-44 animate-fade-float"
+    />
+  </div>
             <h1 className="font-dancing text-4xl sm:text-5xl md:text-6xl font-bold text-[#d4af37] mb-4 tracking-wide">
               Make Your Moments Truly Special
             </h1>
