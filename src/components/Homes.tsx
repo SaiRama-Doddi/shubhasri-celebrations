@@ -31,7 +31,7 @@ export default function Homes() {
       className="min-h-screen bg-[#4a1515] relative overflow-x-hidden"
     >
       {/* Background texture */}
-      <div className="absolute inset-0 bg-[url('/shubha.png')] bg-cover bg-center opacity-10"></div>
+      <div className="absolute inset-0 bg-[url('/shubha.png')] bg-cover bg-center opacity-10 bg-animated"></div>
 
       {/* ===== TOP SVG BEHIND TEXT ===== */}
       <div className="absolute top-0 left-0 right-0 overflow-hidden z-0">
