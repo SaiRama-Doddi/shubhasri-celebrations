@@ -1,91 +1,93 @@
-import { Facebook, Instagram, Twitter, Youtube, Heart } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube, Heart } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#5f2912] text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+    <footer className="bg-white text-black py-14 border-t border-gray-200">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+          
+          {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold text-[#ffc900] mb-4">
-              Shubhaश्री Celebrations
-            </h3>
-            <p className="text-[#f9e5b3]">
+             <Link to="/" className="flex items-center">
+            <img
+              src="/shubha1.png"
+              alt="SS Consultants Logo"
+              className="w-44 md:w-60 h-auto object-contain drop-shadow-lg"
+            />
+          </Link>
+            <p className="text-gray-600 leading-relaxed">
               Creating unforgettable moments and magical celebrations since 2014.
             </p>
           </div>
 
+          {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-[#ffc900]">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="#home" className="text-[#f9e5b3] hover:text-[#ffc900] transition">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-[#f9e5b3] hover:text-[#ffc900] transition">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="text-[#f9e5b3] hover:text-[#ffc900] transition">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-[#f9e5b3] hover:text-[#ffc900] transition">
-                  Contact
-                </a>
-              </li>
+            <h4 className="text-xl font-semibold mb-4 text-[#c89d00]">Quick Links</h4>
+            <ul className="space-y-3">
+              {["Home", "Services", "About Us", "Contact"].map((item) => (
+                <li key={item}>
+                  <a
+                    href={`#${item.toLowerCase().replace(" ", "")}`}
+                    className="text-gray-700 hover:text-[#c89d00] transition-colors duration-200"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
+          {/* Popular Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-[#ffc900]">Popular Services</h4>
-            <ul className="space-y-2">
-              <li className="text-[#f9e5b3]">Wedding Planning</li>
-              <li className="text-[#f9e5b3]">Birthday Parties</li>
-              <li className="text-[#f9e5b3]">Corporate Events</li>
-              <li className="text-[#f9e5b3]">Baby Showers</li>
+            <h4 className="text-xl font-semibold mb-4 text-[#c89d00]">Popular Services</h4>
+            <ul className="space-y-3 text-gray-700">
+              <li>Wedding Planning</li>
+              <li>Birthday Parties</li>
+              <li>Corporate Events</li>
+              <li>Baby Showers</li>
             </ul>
           </div>
 
+          {/* Social Icons */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-[#ffc900]">Follow Us</h4>
+            <h4 className="text-xl font-semibold mb-4 text-[#c89d00]">Follow Us</h4>
             <div className="flex space-x-4">
-              <a
-                href="https://www.facebook.com/people/Shubha%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-Celebrations/61583829333177/?mibextid=wwXIfr&rdid=tuzzoA2s7sxXMmCi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17ZqNrsi9c%2F%3Fmibextid%3DwwXIfr"
-                className="w-10 h-10 bg-[#622e17] rounded-full flex items-center justify-center hover:bg-[#ffc900] transition-all duration-300"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="https://www.instagram.com/shubhashri.celebrations/?igsh=MWM2aW9kOWZmMjNrcQ%3D%3D&utm_source=qr#"
-                className="w-10 h-10 bg-[#622e17] rounded-full flex items-center justify-center hover:bg-[#ffc900] transition-all duration-300"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-[#622e17] rounded-full flex items-center justify-center hover:bg-[#ffc900] transition-all duration-300"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-[#622e17] rounded-full flex items-center justify-center hover:bg-[#ffc900] transition-all duration-300"
-              >
-                <Youtube className="w-5 h-5" />
-              </a>
+              {[
+                {
+                  icon: Facebook,
+                  link:
+                    "https://www.facebook.com/people/Shubhaश्री-Celebrations/61583829333177/",
+                },
+                {
+                  icon: Instagram,
+                  link:
+                    "https://www.instagram.com/shubhashri.celebrations/",
+                },
+                { icon: Twitter, link: "#" },
+                { icon: Youtube, link: "#" },
+              ].map((item, index) => (
+                <a
+                  key={index}
+                  href={item.link}
+                  className="w-11 h-11 rounded-full bg-gray-100 border border-gray-300 flex items-center justify-center hover:bg-[#c89d00] hover:text-white transition-all duration-300"
+                >
+                  <item.icon className="w-5 h-5" />
+                </a>
+              ))}
             </div>
           </div>
         </div>
 
-        <div className="border-t border-[#622e17] pt-8 text-center">
-          <p className="text-[#f9e5b3] flex items-center justify-center">
-            Made with <Heart className="w-4 h-4 mx-2 text-[#ffc900]" /> by Shubhaश्री Celebrations Team
+        {/* Bottom Section */}
+        <div className="border-t pt-6 border-gray-300 text-center">
+          <p className="text-gray-600 flex items-center justify-center">
+            Made with
+            <Heart className="w-4 h-4 mx-2 text-[#c89d00]" />
+            by Shubhaश्री Celebrations Team
           </p>
-          <p className="text-[#b59372] mt-2">
+          <p className="text-gray-500 mt-2">
             &copy; 2024 Shubhaश्री Celebrations. All rights reserved.
           </p>
         </div>

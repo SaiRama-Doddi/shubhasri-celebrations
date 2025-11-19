@@ -47,7 +47,7 @@ bg-blend-overlay
             <img
               src="/shubha1.png"
               alt="SS Consultants Logo"
-              className="w-44 md:w-60 h-auto object-contain drop-shadow-lg"
+              className="w-44 md:w-65 h-auto object-contain drop-shadow-lg"
             />
           </Link>
 

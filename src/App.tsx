@@ -11,6 +11,7 @@ import Highlights from "./components/Highlights";
 import Parallax from "./components/Parallax";
 import GetStarted from "./components/GetStarted";
 import ScrollToTop from "./components/ScrollToTop";
+import Testimonials from "./components/Testinomials";
 
 function HomePage() {
   return (
@@ -24,6 +25,7 @@ function HomePage() {
       <Parallax image="https://res.cloudinary.com/djhsdo5to/image/upload/v1763395618/pexels-nguy-n-ti-n-th-nh-2150376175-33104577_vfibmq.jpg" height="600px" />
       <Highlights />
       <Parallax image="https://res.cloudinary.com/djhsdo5to/image/upload/v1763395614/pexels-thevisionaryvows-33485972_dlu2tw.jpg" height="600px" />
+      <Testimonials/>
 
       <Contact />
       <Footer />
