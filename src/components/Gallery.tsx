@@ -1,6 +1,4 @@
-import { useState } from "react";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+import React from "react";
 
 const Gallery = () => {
   // ------- JUST IMAGES (ADD ALL YOUR PREWEDDING / PHOTOSHOOT / HALDI / WEDDING IMAGES HERE) -------
@@ -14,11 +12,7 @@ const Gallery = () => {
     "https://res.cloudinary.com/djhsdo5to/image/upload/v1763542675/IMG_20251119_135526_759_ijrjdj.jpg",
     "https://res.cloudinary.com/djhsdo5to/image/upload/v1763542060/IMG_20251119_135532_412_uyndci.jpg",
     "https://res.cloudinary.com/djhsdo5to/image/upload/v1763542060/IMG_20251119_135542_615_zu1y6u.jpg",
-    // add unlimited images…
   ];
-
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [lightboxIndex, setLightboxIndex] = useState(0);
 
   return (
     <section id="gallery" className="py-20 bg-[#fff8f3]">
@@ -32,11 +26,7 @@ const Gallery = () => {
           {images.map((src, index) => (
             <div
               key={index}
-              className="group relative cursor-pointer overflow-hidden rounded-xl shadow-lg"
-              onClick={() => {
-                setLightboxIndex(index);
-                setLightboxOpen(true);
-              }}
+              className="group relative overflow-hidden rounded-xl shadow-lg"
             >
               <img
                 src={src}
@@ -49,24 +39,6 @@ const Gallery = () => {
           ))}
         </div>
       </div>
-
-      {/* ---------- LIGHTBOX ---------- */}
-      {lightboxOpen && (
-        <Lightbox
-          mainSrc={images[lightboxIndex]}
-          nextSrc={images[(lightboxIndex + 1) % images.length]}
-          prevSrc={images[(lightboxIndex + images.length - 1) % images.length]}
-          onCloseRequest={() => setLightboxOpen(false)}
-          onMovePrevRequest={() =>
-            setLightboxIndex(
-              (lightboxIndex + images.length - 1) % images.length
-            )
-          }
-          onMoveNextRequest={() =>
-            setLightboxIndex((lightboxIndex + 1) % images.length)
-          }
-        />
-      )}
     </section>
   );
 };
