@@ -1,5 +1,3 @@
-import { Sparkles, Calendar, Heart, Crown } from "lucide-react";
-import { Link } from "react-router-dom";
 
 export default function Homes() {
   return (
