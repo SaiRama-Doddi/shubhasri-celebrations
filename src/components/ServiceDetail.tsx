@@ -1,11 +1,10 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { ChevronLeft, Star, Users, Clock, DollarSign } from 'lucide-react';
+import { ChevronLeft, Star } from 'lucide-react';
 import { getServiceBySlug } from '../data/servicesData';
 
 const ServiceDetail = () => {
   const { serviceId } = useParams();
   const navigate = useNavigate();
-
   const service = getServiceBySlug(serviceId || '');
 
   if (!service) {
@@ -25,50 +24,66 @@ const ServiceDetail = () => {
   }
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#f9e5b3] to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+    <section className="min-h-screen bg-gradient-to-b from-[#fdf7e2] to-white">
+      <div className="max-w-7xl mx-auto px-4 py-20">
+
+        {/* Back Button */}
         <button
           onClick={() => navigate(-1)}
-          className="flex items-center text-[#622e17] hover:text-[#3c0501] mb-8 font-semibold transition cursor-pointer"
+          className="flex items-center text-[#9a6b10] hover:text-[#3c0501] mt-10 mb-10 font-semibold transition cursor-pointer"
         >
-          <ChevronLeft className="w-5 h-5 mr-2" />
-          Back to Services
+          <ChevronLeft className="w-6 h-6 mr-3" />
+          <span className="tracking-wide text-lg">Back to Services</span>
         </button>
 
-        <div className="mb-12">
-          <h1 className="text-5xl font-bold text-[#3c0501] mb-4">{service.title}</h1>
-          <div className="flex items-center gap-4">
-            <div className="flex items-center">
-              {[...Array(5)].map((_, i) => (
-                <Star
-                  key={i}
-                  className={`w-5 h-5 ${
-                    i < Math.floor(service.rating)
-                      ? 'fill-[#ffc900] text-[#ffc900]'
-                      : 'text-gray-300'
-                  }`}
-                />
-              ))}
-            </div>
-            <span className="text-[#622e17] font-semibold">
-              {service.rating} ({service.reviews} reviews)
-            </span>
-          </div>
-        </div>
+        {/* ==============================
+              TWO COLUMN LAYOUT
+              LEFT = 30% | RIGHT = 70%
+           ============================== */}
+        <div className="flex flex-col lg:flex-row gap-12">
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-          <div className="lg:col-span-2">
-            <div className="bg-white rounded-2xl p-8 shadow-xl mb-8">
-              <h2 className="text-3xl font-bold text-[#3c0501] mb-4">Overview</h2>
-              <p className="text-lg text-[#622e17] leading-relaxed mb-6">
+          {/* LEFT — CONTENT (30%) */}
+          <div className="lg:w-[30%] w-full">
+
+            <h1 className="text-3xl font-bold text-[#3c0501] tracking-wider mb-6">
+              {service.title}
+            </h1>
+
+            <div className="flex items-center gap-4 mb-6">
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    className={`w-5 h-5 ${
+                      i < Math.floor(service.rating)
+                        ? 'fill-[#ffc900] text-[#ffc900]'
+                        : 'text-gray-300'
+                    }`}
+                  />
+                ))}
+              </div>
+              <span className="text-[#622e17] font-semibold text-lg">
+                {service.rating} ({service.reviews} reviews)
+              </span>
+            </div>
+
+            <div className="bg-white/90 rounded-3xl p-8 shadow-lg">
+              <h2 className="text-3xl font-serif font-bold text-[#3c0501] mb-4">
+                Overview
+              </h2>
+
+              <p className="text-lg text-[#636058] leading-relaxed mb-6">
                 {service.fullDescription}
               </p>
 
-              <h3 className="text-2xl font-bold text-[#3c0501] mb-4">What We Offer</h3>
-              <ul className="space-y-3">
+              <h3 className="text-2xl font-serif font-bold text-[#6b340b] mb-4">
+                What We Offer
+              </h3>
+
+              <ul className="space-y-3 ml-2">
                 {service.highlights.map((highlight, idx) => (
-                  <li key={idx} className="flex items-start text-[#622e17]">
-                    <span className="inline-block w-2 h-2 bg-[#ffc900] rounded-full mr-3 mt-2 shrink-0"></span>
+                  <li key={idx} className="flex items-start text-[#84652e]">
+                    <span className="inline-block w-2 h-2 bg-[#ffc900] rounded-full mr-3 mt-2"></span>
                     <span className="text-lg">{highlight}</span>
                   </li>
                 ))}
@@ -76,75 +91,28 @@ const ServiceDetail = () => {
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div className="bg-gradient-to-br from-[#622e17] to-[#3c0501] rounded-2xl p-8 text-white shadow-xl">
-              <h3 className="text-2xl font-bold mb-6 text-[#ffc900]">Service Details</h3>
+          {/* RIGHT — IMAGE GALLERY (70%) */}
+          <div className="lg:w-[70%] w-full">
+        
 
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <DollarSign className="w-6 h-6 text-[#ffc900] mr-4 shrink-0 mt-1" />
-                  <div>
-                    <p className="text-sm text-[#b59372]">Starting Price</p>
-                    <p className="text-xl font-semibold">{service.pricing}</p>
-                  </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              {service.images.map((img, idx) => (
+                <div
+                  key={idx}
+                  className="rounded-2xl overflow-hidden border-4 border-dotted border-[#eeb855] shadow-xl transition-transform duration-300 hover:scale-105 bg-white"
+                >
+                  <img
+                    src={img}
+                    alt={`${service.title} ${idx + 1}`}
+                    className="object-cover w-full h-56"
+                  />
                 </div>
-
-                <div className="flex items-start">
-                  <Clock className="w-6 h-6 text-[#ffc900] mr-4 shrink-0 mt-1" />
-                  <div>
-                    <p className="text-sm text-[#b59372]">Duration</p>
-                    <p className="text-lg font-semibold">{service.duration}</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <Users className="w-6 h-6 text-[#ffc900] mr-4 shrink-0 mt-1" />
-                  <div>
-                    <p className="text-sm text-[#b59372]">Our Team Size</p>
-                    <p className="text-lg font-semibold">{service.teamSize}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#bc842f] rounded-2xl p-8 text-white shadow-xl">
-              <h4 className="text-lg font-bold mb-4">Why Choose Us?</h4>
-              <ul className="space-y-3 text-sm">
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 bg-white rounded-full mr-3 mt-1.5 shrink-0"></span>
-                  <span>Expert team with years of experience</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 bg-white rounded-full mr-3 mt-1.5 shrink-0"></span>
-                  <span>100% client satisfaction guaranteed</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 bg-white rounded-full mr-3 mt-1.5 shrink-0"></span>
-                  <span>Customized solutions for every occasion</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 bg-white rounded-full mr-3 mt-1.5 shrink-0"></span>
-                  <span>Attention to every detail</span>
-                </li>
-              </ul>
+              ))}
             </div>
           </div>
+
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-12">
-          {service.images.map((image, idx) => (
-            <div
-              key={idx}
-              className="relative w-full h-56 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all"
-            >
-              <img
-                src={image}
-                alt={`${service.title} ${idx + 1}`}
-                className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-              />
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

@@ -77,9 +77,7 @@ const About = () => {
 
         {/* Mission - Vision - Values */}
         <div className="mb-24">
-          <h3 className="text-4xl font-bold text-center mb-14 text-[#3c0501]">
-            Mission • Vision • Values
-          </h3>
+       
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {[
@@ -112,51 +110,9 @@ const About = () => {
         </div>
 
 
-        {/* Team Section */}
-        <div className="mb-24">
-          <h3 className="text-4xl font-bold text-center mb-12 text-[#3c0501]">
-            Meet Our Team
-          </h3>
+       
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            {[1, 2, 3].map((num) => (
-              <div
-                key={num}
-                className="bg-[#3c0501] border border-[#f0c27b]/20 rounded-2xl p-6 text-center backdrop-blur-md
-                          hover:shadow-lg hover:scale-105 transition-all duration-300"
-              >
-                <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#ffd77b]">
-                  <img
-                    src={`https://i.pravatar.cc/300?img=${num}`}
-                    alt="Team Member"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h4 className="text-xl font-semibold">Team Member {num}</h4>
-                <p className="text-[#f9e5b3] text-sm">Event Specialist</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-
-        {/* Brands Worked With */}
-       {/*  <div className="bg-[#3c0501] rounded-2xl p-10 shadow-xl">
-          <h3 className="text-3xl font-bold mb-10 text-center text-white">
-            Brands That Trusted Us
-          </h3>
-
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center">
-            {['Taj Hotels', 'ITC', 'Reliance', 'Big Bazaar'].map((brand, i) => (
-              <div
-                key={i}
-                className="text-center text-xl font-semibold text-white opacity-80 hover:opacity-100 transition-all"
-              >
-                {brand}
-              </div>
-            ))}
-          </div>
-        </div> */}
+       
 
          <section className="py-20 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -3,34 +3,34 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-black py-14 border-t border-gray-200">
+    <footer className="bg-gradient-to-t from-[#3c0501] via-[#622e17] to-[#b7802f] text-[#f9e5b3] py-16 border-t border-[#d4af37]/40">
       <div className="max-w-7xl mx-auto px-6">
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-          
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-14 mb-14">
+
           {/* Brand */}
           <div>
-             <Link to="/" className="flex items-center">
-            <img
-              src="/shubha1.png"
-              alt="SS Consultants Logo"
-              className="w-44 md:w-60 h-auto object-contain drop-shadow-lg"
-            />
-          </Link>
-            <p className="text-gray-600 leading-relaxed">
+            <Link to="/" className="flex items-center mb-6">
+              <img
+                src="/shubha1.png"
+                alt="SS Consultants Logo"
+                className="w-48 md:w-60 h-auto object-contain drop-shadow-lg"
+              />
+            </Link>
+            <p className="text-[#d4af37] leading-relaxed text-lg max-w-sm">
               Creating unforgettable moments and magical celebrations since 2014.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xl font-semibold mb-4 text-[#c89d00]">Quick Links</h4>
-            <ul className="space-y-3">
+            <h4 className="text-2xl font-semibold mb-6 text-[#e0a93e]">Quick Links</h4>
+            <ul className="space-y-4">
               {["Home", "Services", "About Us", "Contact"].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase().replace(" ", "")}`}
-                    className="text-gray-700 hover:text-[#c89d00] transition-colors duration-200"
+                    className="hover:text-[#ffc900] transition-colors duration-300 text-lg"
                   >
                     {item}
                   </a>
@@ -41,8 +41,8 @@ const Footer = () => {
 
           {/* Popular Services */}
           <div>
-            <h4 className="text-xl font-semibold mb-4 text-[#c89d00]">Popular Services</h4>
-            <ul className="space-y-3 text-gray-700">
+            <h4 className="text-2xl font-semibold mb-6 text-[#d4af37]">Popular Services</h4>
+            <ul className="space-y-4 text-lg">
               <li>Wedding Planning</li>
               <li>Birthday Parties</li>
               <li>Corporate Events</li>
@@ -52,8 +52,8 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div>
-            <h4 className="text-xl font-semibold mb-4 text-[#c89d00]">Follow Us</h4>
-            <div className="flex space-x-4">
+            <h4 className="text-2xl font-semibold mb-6 text-[#d4af37]">Follow Us</h4>
+            <div className="flex space-x-5">
               {[
                 {
                   icon: Facebook,
@@ -62,8 +62,7 @@ const Footer = () => {
                 },
                 {
                   icon: Instagram,
-                  link:
-                    "https://www.instagram.com/shubhashri.celebrations/",
+                  link: "https://www.instagram.com/shubhashri.celebrations/",
                 },
                 { icon: Twitter, link: "#" },
                 { icon: Youtube, link: "#" },
@@ -71,9 +70,12 @@ const Footer = () => {
                 <a
                   key={index}
                   href={item.link}
-                  className="w-11 h-11 rounded-full bg-gray-100 border border-gray-300 flex items-center justify-center hover:bg-[#c89d00] hover:text-white transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-[#d4af37] border border-[#b88a1a] flex items-center justify-center text-[#3c0501] hover:bg-[#ffc900] hover:text-[#3c0501] shadow-md transition-all duration-300"
+                  aria-label={`Follow on ${item.icon.displayName || "social media"}`}
                 >
-                  <item.icon className="w-5 h-5" />
+                  <item.icon className="w-6 h-6" />
                 </a>
               ))}
             </div>
@@ -81,13 +83,13 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t pt-6 border-gray-300 text-center">
-          <p className="text-gray-600 flex items-center justify-center">
+        <div className="border-t border-[#d4af37]/40 pt-8 text-center">
+          <p className="text-[#d4af37] flex items-center justify-center text-lg select-none">
             Made with
-            <Heart className="w-4 h-4 mx-2 text-[#c89d00]" />
+            <Heart className="w-5 h-5 mx-2 text-[#ffc900] animate-pulse" />
             by Shubhaश्री Celebrations Team
           </p>
-          <p className="text-gray-500 mt-2">
+          <p className="text-[#bfa94f] mt-2 text-sm select-none">
             &copy; 2024 Shubhaश्री Celebrations. All rights reserved.
           </p>
         </div>
