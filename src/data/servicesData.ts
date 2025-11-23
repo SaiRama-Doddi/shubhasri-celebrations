@@ -42,7 +42,7 @@ export const mainServices: Service[] = [
     teamSize: '15-20 professionals',
     rating: 4.9,
     reviews: 250,
-    image: 'https://arihantdecoration.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-5.25.50-PM.jpeg',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763908432/wedding-photo_nla33d.jpg',
     highlights: [
       'Complete wedding coordination and planning',
       'Venue decoration and setup',
@@ -74,7 +74,7 @@ export const mainServices: Service[] = [
     teamSize: '8-10 professionals',
     rating: 4.8,
     reviews: 145,
-    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763363173/engage1_h6qstt.webp',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763908433/engagement-photo_xtmfna.jpg',
     highlights: [
       'Romantic venue setup and decoration',
       'Lighting and ambiance creation',
@@ -106,7 +106,7 @@ export const mainServices: Service[] = [
     teamSize: '8-10 professionals',
     rating: 4.8,
     reviews: 180,
-    image: 'https://static.vecteezy.com/system/resources/previews/010/978/930/non_2x/traditional-wedding-ceremony-beautiful-culture-of-india-or-decorated-for-haldi-ceremony-photo.jpg',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763908643/haldi-photo_pteiw1.jpg',
     highlights: [
       'Venue decoration with traditional themes',
       'Haldi paste ceremony arrangements',
@@ -138,7 +138,7 @@ export const mainServices: Service[] = [
     teamSize: '6-8 professionals',
     rating: 4.7,
     reviews: 320,
-    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763362738/birthday7_zsx26v.webp',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763908432/birthday-photo_rsab56.jpg',
     highlights: [
       'Custom theme selection and decoration',
       'Entertainment and game arrangements',
@@ -234,7 +234,7 @@ export const mainServices: Service[] = [
     teamSize: '6-8 professionals',
     rating: 4.7,
     reviews: 110,
-    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763379775/house9_oaeukz.png',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763907456/house-warming_kjdv2v.jpg',
     highlights: [
       'Auspicious day selection',
       'Ritual coordination and priest arrangement',
@@ -266,7 +266,7 @@ export const mainServices: Service[] = [
     teamSize: '5-7 professionals',
     rating: 4.9,
     reviews: 200,
-    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763379764/anni3_j1clou.jpg',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763909068/anni_ij7nlk.jpg',
     highlights: [
       'Romantic venue decoration',
       'Candle and lighting arrangements',
@@ -298,7 +298,7 @@ export const mainServices: Service[] = [
     teamSize: '5-6 professionals',
     rating: 4.8,
     reviews: 165,
-    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763379768/baby9_rxkzix.jpg',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763907053/babys_jcrhti.jpg',
     highlights: [
       'Theme selection and decoration',
       'Baby-themed games and activities',
@@ -330,7 +330,7 @@ export const mainServices: Service[] = [
     teamSize: '10-12 professionals',
     rating: 4.7,
     reviews: 92,
-    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763379802/office9_halm2b.webp',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763907584/office-in_p3j6gk.jpg',
     highlights: [
       'Venue setup and decoration',
       'Ribbon cutting ceremony coordination',
@@ -394,7 +394,7 @@ export const mainServices: Service[] = [
     teamSize: '15-20 professionals',
     rating: 4.8,
     reviews: 128,
-    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763379770/c4_oshyiw.webp',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763907362/events_qbqwqe.jpg',
     highlights: [
       'Event planning and coordination',
       'Venue management and setup',
@@ -429,7 +429,7 @@ export const specializedServices: Service[] = [
     teamSize: '10-18 professionals',
     rating: 4.9,
     reviews: 182,
-    image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1170',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763909268/floral_lpwezs.jpg',
     highlights: [
       'Custom theme décor',
       'Floral mandaps & stage arrangements',
@@ -440,14 +440,14 @@ export const specializedServices: Service[] = [
       'Complete stage planning and execution'
     ],
     images: [
-      'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1170',
-      'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=1169',
-      'https://images.unsplash.com/photo-1478146896981-b80fe463b330?q=80&w=1170',
-      'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1169',
-      'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=1170',
-      'https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?q=80&w=1170',
-      'https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=1169',
-      'https://images.unsplash.com/photo-1478146896981-b80fe463b330?q=80&w=1169'
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763909708/floral-2_o4asiy.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763909710/floral-5_kksdvy.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763909710/floral-4_vgejvr.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763909714/floral-6_j38zpt.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763909715/floral-8_ntlvca.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763909719/floral-9_o5ergn.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763909709/floral-3_vq6eso.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763909720/floral-10_c1hnap.jpg'
     ]
   },
   {
@@ -461,7 +461,7 @@ export const specializedServices: Service[] = [
     teamSize: '12-25 professionals',
     rating: 4.8,
     reviews: 210,
-    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532004/f8_vwfs2l.jpg',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763909167/catering_in6ynl.jpg',
     highlights: [
       'Traditional vegetarian & non-vegetarian menus',
       'Live counters & sweet stalls',
@@ -492,7 +492,7 @@ export const specializedServices: Service[] = [
     teamSize: '3-6 designers',
     rating: 4.7,
     reviews: 94,
-    image: 'https://images.unsplash.com/photo-1530103043960-ef38714abb15?q=80&w=1170',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763907189/inivitation_gm5zjq.jpg',
     highlights: [
       'Printed & digital invitation cards',
       'Save-the-date videos',
@@ -503,13 +503,13 @@ export const specializedServices: Service[] = [
     ],
     images: [
       'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532797/d2_yoi0fi.jpg',
-      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532798/d4_qyz4sf.jpg',
-      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532797/d3_ved3jy.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763910149/invite2_fv0iat.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763910149/invite1_j6dsyv.jpg',
       'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532797/d1_ktrfod.jpg',
-      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532798/d5_kpyfkg.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763910150/invite3_lr8ney.jpg',
       'https://res.cloudinary.com/djhsdo5to/image/upload/v1763532798/d6_ok3ats.jpg',
-      'https://images.unsplash.com/photo-1542744173-05336fcc7ad4?q=80&w=1074',
-      'https://images.unsplash.com/photo-1516384903227-139a8cf0ec21?q=80&w=1176'
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763910426/invite6_annqjc.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763910299/invite5_u5sx58.jpg'
     ]
   },
   {
@@ -523,7 +523,7 @@ export const specializedServices: Service[] = [
     teamSize: '4-10 professionals',
     rating: 4.9,
     reviews: 165,
-    image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1171',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763908148/photo_tdx6on.jpg',
     highlights: [
       'Candid photography',
       'Cinematic videography',
@@ -533,14 +533,14 @@ export const specializedServices: Service[] = [
       'Event highlight reels'
     ],
     images: [
-      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763449203/m8_ryjxpi.jpg',
-      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763449202/m6_xyom2r.jpg',
-      'https://images.unsplash.com/photo-1452827073306-6e6e661baf57?q=80&w=1074',
-      'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1170',
-      'https://images.unsplash.com/photo-1554048612-b6a482bc67e5?q=80&w=1170',
-      'https://images.unsplash.com/photo-1502982899975-c0b10c44b2ae?q=80&w=1170',
-      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763449203/m9_yzbjkq.jpg',
-      'https://images.unsplash.com/photo-1486401899868-0e435ed85128?q=80&w=1170'
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763913965/p3_apdbl1.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763913957/p_mhcfel.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763913689/candid1_p8o5it.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763913692/candid4_oxi2tn.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763913690/candid3_mutvsx.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763913696/candid5_wlysnn.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763913696/candid6_usgkvh.jpg',
+      'https://res.cloudinary.com/djhsdo5to/image/upload/v1763913690/candid2_wnjppk.jpg'
     ]
   },
   {
@@ -554,7 +554,7 @@ export const specializedServices: Service[] = [
     teamSize: '3-8 professionals',
     rating: 4.6,
     reviews: 74,
-    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763448262/g9_akfuxc.avif',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763907722/return-gift_nfs6so.jpg',
     highlights: [
       'Customizable hampers',
       'Eco-friendly gift sets',
@@ -585,7 +585,7 @@ export const specializedServices: Service[] = [
     teamSize: '2-10 performers',
     rating: 4.7,
     reviews: 119,
-    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763449202/m1_cuzcdg.jpg',
+    image: 'https://res.cloudinary.com/djhsdo5to/image/upload/v1763907850/music_fwtvyj.jpg',
     highlights: [
       'Nadhaswaram & dhol teams',
       'Folk & cultural performances',

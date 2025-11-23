@@ -13,7 +13,7 @@ const About = () => {
         
         {/* Title */}
         <div className="text-center mb-20">
-          <h2 className="font-pacifico text-3xl sm:text-5xl md:text-5xl font-bold mb-4 text-[text-[#3c0501]] drop-shadow-xl">
+          <h2 className="font-[Times_New_Roman] italic text-3xl sm:text-5xl md:text-5xl font-bold mb-4 text-[text-[#3c0501]] drop-shadow-xl">
             About Shubaश्री Celebrations
           </h2>
 
@@ -28,7 +28,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center mb-24">
           {/* Story */}
           <div>
-            <h3 className="text-4xl font-bold mb-8 text-[#3c0501]">
+            <h3 className="font-[Times_New_Roman] italic text-4xl font-bold mb-8 text-[#3c0501]">
               Our Story
             </h3>
 
@@ -118,7 +118,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <h2 className="text-4xl md:text-5xl font-bold text-amber-900">Why Choose Us?</h2>
+              <h2 className="font-[Times_New_Roman] italic text-4xl md:text-5xl font-bold text-amber-900">Why Choose Us?</h2>
 
               {[
                 {

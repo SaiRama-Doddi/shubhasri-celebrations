@@ -17,6 +17,12 @@ html {
   scroll-padding-top: 80px;
 }
 
+/* GLOBAL FONT: Times New Roman for entire website */
+* {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+
 html,
 body {
   overflow-x: hidden !important;
