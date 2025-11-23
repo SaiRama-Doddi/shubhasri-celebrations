@@ -5,7 +5,7 @@ const Contact = () => {
     <section id="contact" className="py-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-[Times_New_Roman] italic text-5xl font-bold text-[#3c0501] mb-4">
+          <h2 className="font-[Times_New_Roman] italic text-3xl sm:text-3xl md:text-5xl font-bold text-[#3c0501] mb-4">
             Get In Touch
           </h2>
           <p className="text-xl text-[#622e17] max-w-2xl mx-auto">

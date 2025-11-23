@@ -16,7 +16,7 @@ export default function Services() {
       <div className="mx-auto px-8">
 
         {/* Title */}
-        <h1 className="text-center text-5xl md:text-4xl font-bold text-[#3c0501] mb-10 mt-6">
+        <h1 className="text-center text-3xl sm:text-3xl md:text-5xl font-bold text-[#3c0501] mb-10 mt-6">
           Our Premium Services
         </h1>
 
