@@ -28,12 +28,14 @@ export default function Navbar({ onBookClick }: NavbarProps) {
             <img
               src="/logo1.png"
               alt="Logo Icon"
-              className="w-20 h-20 object-contain"
+          className="w-14 h-14 md:w-20 md:h-20 object-contain"
+
             />
             <img
               src="/logo2.png"
               alt="Logo Text"
-              className="h-20 mt-2 object-contain"
+           className="h-14 md:h-20 mt-2 object-contain"
+
             />
           </Link>
 
