@@ -1,4 +1,4 @@
-import { Award, Users, Target, Shield } from 'lucide-react';
+import { Award, Users, Target, Shield,Eye } from 'lucide-react';
 
 const About = () => {
   return (
@@ -76,38 +76,41 @@ const About = () => {
 
 
         {/* Mission - Vision - Values */}
-        <div className="mb-24">
-       
+      {/* Mission - Vision - Values */}
+<div className="mb-24">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {[
-              {
-                icon: '🎯',
-                title: 'Mission',
-                text: 'Deliver world-class event experiences with creativity, precision, and heartfelt service.'
-              },
-              {
-                icon: '👁️',
-                title: 'Vision',
-                text: 'Become India’s most trusted and innovative celebration company.'
-              },
-              {
-                icon: '💛',
-                title: 'Values',
-                text: 'Integrity, creativity, reliability, transparency, and customer delight.'
-              }
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="bg-[#3c0501] backdrop-blur-md border border-[#f0c27b]/40 rounded-2xl p-8 text-center hover:scale-105 transition-all"
-              >
-                <div className="text-6xl mb-4">{item.icon}</div>
-                <h4 className="text-2xl font-bold mb-3 text-white">{item.title}</h4>
-                <p className="text-[#f9e5b3] leading-relaxed">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+    {/* MISSION */}
+    <div className="bg-[#3c0501] backdrop-blur-md border border-[#f0c27b]/40 rounded-2xl p-8 text-center hover:scale-105 transition-all">
+      <Target className="w-14 h-14 mx-auto mb-6 text-[#ffd77b]" />
+      <h4 className="text-2xl font-bold mb-3 text-white">Mission</h4>
+      <p className="text-[#f9e5b3] leading-relaxed">
+        Deliver world-class event experiences with creativity,
+        precision, and heartfelt service.
+      </p>
+    </div>
+
+    {/* VISION */}
+    <div className="bg-[#3c0501] backdrop-blur-md border border-[#f0c27b]/40 rounded-2xl p-8 text-center hover:scale-105 transition-all">
+      <Eye className="w-14 h-14 mx-auto mb-6 text-[#ffd77b]" />
+      <h4 className="text-2xl font-bold mb-3 text-white">Vision</h4>
+      <p className="text-[#f9e5b3] leading-relaxed">
+        Become India’s most trusted and innovative celebration company.
+      </p>
+    </div>
+
+    {/* VALUES */}
+    <div className="bg-[#3c0501] backdrop-blur-md border border-[#f0c27b]/40 rounded-2xl p-8 text-center hover:scale-105 transition-all">
+      <Shield className="w-14 h-14 mx-auto mb-6 text-[#ffd77b]" />
+      <h4 className="text-2xl font-bold mb-3 text-white">Values</h4>
+      <p className="text-[#f9e5b3] leading-relaxed">
+        Integrity, creativity, reliability, transparency, and
+        customer delight.
+      </p>
+    </div>
+
+  </div>
+</div>
 
 
        

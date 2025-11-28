@@ -1,9 +1,43 @@
+
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const form = e.currentTarget;
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Your message has been sent successfully!");
+          form.reset();
+        },
+        (error) => {
+          setLoading(false);
+          alert("Failed to send message. Please try again.");
+          console.error(error);
+        }
+      );
+  };
+
   return (
-    <section id="contact" className="py-20 ">
+    <section id="contact" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="font-[Times_New_Roman] italic text-3xl sm:text-3xl md:text-5xl font-bold text-[#3c0501] mb-2 mt-6">
             Get In Touch
@@ -13,20 +47,26 @@ const Contact = () => {
           </p>
         </div>
 
+        {/* Form + Contact Info */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+          {/* Contact Form */}
           <div className="bg-white rounded-2xl p-10 shadow-xl">
             <h3 className="text-3xl font-bold text-[#3c0501] mb-8">
               Send Us a Message
             </h3>
-            <form className="space-y-6">
+
+            <form className="space-y-6" onSubmit={handleSendEmail}>
               <div>
                 <label className="block text-[#622e17] font-semibold mb-2">
                   Your Name
                 </label>
                 <input
+                  name="user_name"
                   type="text"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-[#b59372] focus:border-[#ffc900] focus:outline-none transition"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-[#b59372] focus:border-[#ffc900] transition"
                   placeholder="Enter your name"
+                  required
                 />
               </div>
 
@@ -35,9 +75,11 @@ const Contact = () => {
                   Email Address
                 </label>
                 <input
+                  name="user_email"
                   type="email"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-[#b59372] focus:border-[#ffc900] focus:outline-none transition"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-[#b59372] focus:border-[#ffc900] transition"
                   placeholder="Enter your email"
+                  required
                 />
               </div>
 
@@ -46,8 +88,9 @@ const Contact = () => {
                   Phone Number
                 </label>
                 <input
+                  name="user_phone"
                   type="tel"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-[#b59372] focus:border-[#ffc900] focus:outline-none transition"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-[#b59372] focus:border-[#ffc900] transition"
                   placeholder="Enter your phone number"
                 />
               </div>
@@ -56,8 +99,12 @@ const Contact = () => {
                 <label className="block text-[#622e17] font-semibold mb-2">
                   Event Type
                 </label>
-                <select className="w-full px-4 py-3 rounded-lg border-2 border-[#b59372] focus:border-[#ffc900] focus:outline-none transition">
-                  <option>Select an event type</option>
+                <select
+                  name="event_type"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-[#b59372] focus:border-[#ffc900] transition"
+                  required
+                >
+                  <option value="">Select an event type</option>
                   <option>Wedding</option>
                   <option>Haldi Ceremony</option>
                   <option>Birthday Party</option>
@@ -77,22 +124,30 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
+                  name="message"
                   rows={4}
-                  className="w-full px-4 py-3 rounded-lg border-2 border-[#b59372] focus:border-[#ffc900] focus:outline-none transition resize-none"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-[#b59372] focus:border-[#ffc900] transition"
                   placeholder="Tell us about your event..."
+                  required
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-[#3c0501] text-white py-4 rounded-lg font-semibold text-lg hover:bg-[#622e17] transition-all duration-300 transform hover:scale-105 shadow-lg"
+                disabled={loading}
+                className="w-full bg-[#3c0501] text-white py-4 rounded-lg font-semibold text-lg hover:bg-[#622e17] transition-all duration-300 transform hover:scale-105 shadow-lg disabled:opacity-60"
               >
-                Submit Request
+                {loading ? "Sending..." : "Submit Request"}
               </button>
             </form>
           </div>
 
-          <div>
+          {/* Contact Info (Right Side) */}
+          {/* Your existing right-side contact info stays the same */}
+
+          {/* ... (KEEP existing code) */}
+
+  <div>
             <div className="bg-[#3c0501] rounded-2xl p-10 shadow-xl text-white mb-8">
               <h3 className="text-3xl font-bold mb-8 text-[#ffc900]">
                 Contact Information

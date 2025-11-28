@@ -1,4 +1,4 @@
-import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
@@ -7,131 +7,142 @@ const testimonials = [
     name: "Ananya K.",
     role: "Bride",
     initials: "AK",
-    text:
-      "Shubaश्री Celebrations made our wedding a dream come true! The decor was breathtaking, especially the mandap and floral arrangements.",
+    text: "Shubaश्री Celebrations made our wedding a dream come true! The decor was breathtaking — every detail felt magical and royal.",
   },
   {
     name: "Rohan S.",
     role: "Groom",
     initials: "RS",
-    text:
-      "From the Haldi ceremony to the grand reception, the team executed every detail flawlessly. Everyone is still talking about the vibrant decor!",
+    text: "From Haldi to Reception, everything was perfectly organized. Guests loved the vibrant decor and seamless coordination!",
   },
   {
     name: "Meera T.",
     role: "Pre-Wedding Client",
     initials: "MT",
-    text:
-      "Their creative touch on our pre-wedding shoot setup was stunning. The ambient lighting and backdrop made our memories truly special.",
+    text: "Our pre-wedding theme was beyond beautiful — elegant lighting, cinematic backgrounds, and a dreamlike ambience.",
   },
   {
     name: "Vikram P.",
     role: "Videographer",
     initials: "VP",
-    text:
-      "Working alongside Shubaश्री Celebrations was a delight. Their attention to detail in stage setup and lighting makes filming easier and more beautiful.",
+    text: "A pleasure working with their team. Their stage setups, lighting, floral designs — all are extremely camera-friendly.",
   },
   {
     name: "Sara M.",
     role: "Event Planner",
     initials: "SM",
-    text:
-      "They don’t just decorate—they create experiences! The mix of tradition with modern elegance sets them apart in the wedding decor space.",
+    text: "They curate EXPERIENCES, not just decor. Their blend of tradition + luxury stands unmatched in the industry.",
   },
 ];
-
 
 export default function Testimonials() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const scroll = (direction: "left" | "right") => {
+  const scroll = (dir: "left" | "right") => {
     if (!scrollRef.current) return;
-    const { scrollLeft } = scrollRef.current;
-    const cardWidth = 340;
-    const scrollAmount = direction === "left" ? -cardWidth : cardWidth;
+    const cardWidth = 360;
+    const amount = dir === "left" ? -cardWidth : cardWidth;
     scrollRef.current.scrollTo({
-      left: scrollLeft + scrollAmount,
+      left: scrollRef.current.scrollLeft + amount,
       behavior: "smooth",
     });
   };
 
   return (
-    <section
-      id="testimonials"
-      className="py-20 px-6 bg-gradient-to-br from-[#FFFDF8] to-[#F2F2F2] relative overflow-hidden"
-    >
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-14 bg-gradient-to-b from-[#fff8ef] to-[#f3e4ce] overflow-hidden">
+      {/* Floating Gold Particles */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-10 left-20 w-16 h-16 bg-amber-200 rounded-full blur-3xl opacity-40"></div>
+        <div className="absolute bottom-20 right-32 w-20 h-20 bg-[#d4af37] rounded-full blur-3xl opacity-30"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 relative">
         {/* Heading */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-amber-700 mb-4">
-            Our Clients Say
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl font-bold text-[#3c0501] font-[Times_New_Roman] italic drop-shadow">
+            What Our Clients Say
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Real stories and honest opinions from clients who have chosen <span className="text-amber-700 font-medium">Shubaश्री Celebrations</span>.
+          <p className="text-lg text-[#7a4b2d] mt-3 max-w-2xl mx-auto">
+            Real voices sharing real experiences — crafted with love by{" "}
+            <span className="text-[#c8913f] font-semibold">
+              Shubaश्री Celebrations
+            </span>
+            .
           </p>
         </div>
 
-        {/* Scroll Buttons */}
+        {/* Navigation Arrows */}
         <button
           onClick={() => scroll("left")}
-          className="absolute left-8 top-1/2 -translate-y-1/2 text-white bg-[#3c0501] rounded-full shadow-lg p-3 hover:bg-[#9a6424] z-10 cursor-pointer"
+          className="hidden sm:flex absolute left-8 top-1/2 -translate-y-1/2 z-20 bg-[#3c0501] text-white p-3 rounded-full shadow-xl hover:bg-amber-700 transition"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
+
         <button
           onClick={() => scroll("right")}
-          className="absolute right-8 top-1/2 -translate-y-1/2 text-white bg-[#3c0501] rounded-full shadow-lg p-3 hover:bg-[#9a6424] z-10 cursor-pointer"
+          className="hidden sm:flex absolute right-8 top-1/2 -translate-y-1/2 z-20 bg-[#3c0501] text-white p-3 rounded-full shadow-xl hover:bg-amber-700 transition"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
 
-        {/* Horizontal Scroll Container */}
+        {/* Scrollable Cards */}
         <div
           ref={scrollRef}
-          className="flex gap-8 overflow-x-auto scroll-smooth scrollbar-hide pb-4"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          className="flex gap-10 overflow-x-auto scrollbar-hide scroll-smooth pb-6 px-2"
+          style={{ scrollbarWidth: "none" }}
         >
-          <style>
-            {`
-              .scrollbar-hide::-webkit-scrollbar {
-                display: none;
-              }
-            `}
-          </style>
+          <style>{`.scrollbar-hide::-webkit-scrollbar { display: none; }`}</style>
 
-          {testimonials.map((testimonial, index) => (
+          {testimonials.map((item, index) => (
             <motion.div
               key={index}
-              whileHover={{ scale: 1.04 }}
-              initial={{ opacity: 0, y: 40 }}
+              whileHover={{ scale: 1.05 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.12 }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
               viewport={{ once: true }}
-              className="min-w-[320px] max-w-[340px] bg-white p-6 rounded-2xl shadow-lg border-l-4 border-[#662f11] flex flex-col justify-between relative"
+              className="
+  min-w-[90%] sm:min-w-[350px]
+  rounded-3xl p-8 
+  border border-[#e6d4b4] 
+  hover:shadow-[0_15px_50px_rgba(0,0,0,0.15)]
+  transition-all duration-300 
+  relative
+"
             >
-              {/* Author Section */}
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-11 h-11 rounded-full flex items-center justify-center bg-amber-100 text-amber-700 font-bold text-lg shadow">
-                  {testimonial.initials}
+              {/* Large Quote Icon */}
+              <Quote className="absolute top-4 right-4 w-10 h-10 text-amber-400 opacity-70" />
+
+              {/* Profile */}
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 rounded-full bg-[#fff8e1] border-2 border-[#d4af37] flex items-center justify-center text-[#b27a2b] font-bold text-xl shadow">
+                  {item.initials}
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">{testimonial.role}</p>
+                  <p className="text-lg font-semibold text-[#3c0501]">
+                    {item.name}
+                  </p>
+                  <p className="text-sm text-[#7a4b2d]">{item.role}</p>
                 </div>
               </div>
-              {/* Quote / Review Content */}
-              <div className="mb-6 flex flex-col justify-between h-48">
-  <span className="text-amber-400 text-3xl font-serif mb-2 block">“</span>
-  <p className="text-gray-700 text-base leading-relaxed mb-2 flex-grow">
-    {testimonial.text}
-  </p>
-  <div className="flex space-x-1 mt-auto">
-    {[...Array(5)].map((_, i) => (
-      <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-    ))}
-  </div>
-</div>
 
+              {/* Review Text */}
+              <p className="text-gray-700 leading-relaxed mb-6 h-32">
+                {item.text}
+              </p>
+
+              {/* Stars */}
+              <div className="flex gap-1">
+                {Array(5)
+                  .fill(null)
+                  .map((_, i) => (
+                    <Star
+                      key={i}
+                      className="w-5 h-5 fill-[#d4af37] text-[#d4af37]"
+                    />
+                  ))}
+              </div>
             </motion.div>
           ))}
         </div>
