@@ -15,7 +15,7 @@ const slides = [
   {
     id: 2,
     image:
-      "https://res.cloudinary.com/djhsdo5to/image/upload/v1763909715/floral-7_pqarcr.jpg",
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=1200&auto=format&fit=crop",
     title: "Haldi & Mehendi Celebrations",
     subtitle:
       "Bright, vibrant, and traditional setups designed specially for haldi, mehendi, and sangeet ceremonies.",
@@ -25,7 +25,7 @@ const slides = [
   {
     id: 3,
     image:
-      "https://i.pinimg.com/originals/4f/2f/d3/4f2fd309d1b8f019d01871a3120bfc9c.jpg",
+      "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=1200&auto=format&fit=crop",
     title: "Pre-Wedding & Couple Shoots",
     subtitle:
       "Designer backdrops, themed sets, lighting, and props for cinematic pre-wedding shoots.",
@@ -35,7 +35,7 @@ const slides = [
   {
     id: 4,
     image:
-      "https://birthdaywala.in/wp-content/uploads/2024/06/H5.webp",
+      "https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=1200&auto=format&fit=crop",
     title: "Dhoti Ceremony & Traditional Events",
     subtitle:
       "Pure traditional décor for dhoti ceremony, cradle ceremony, annaprasana, and house rituals.",
@@ -45,7 +45,7 @@ const slides = [
   {
     id: 5,
     image:
-      "https://birthdaywala.in/wp-content/uploads/2024/06/H5.webp",
+      "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1200&auto=format&fit=crop",
     title: "Birthday & Party Decorations",
     subtitle:
       "Custom themes for kids’ birthdays, surprise parties, anniversaries and celebrations.",
